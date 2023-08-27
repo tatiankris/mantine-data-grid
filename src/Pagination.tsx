@@ -1,6 +1,7 @@
 import { Box, Group, MantineNumberSize, Pagination as MantinePagination, Select, Text } from '@mantine/core';
 import { Table } from '@tanstack/react-table';
 import { DataGridLocale, PaginationMode } from './types';
+import {Feature12} from "./Feature12";
 
 export const DEFAULT_PAGE_SIZES = ['10', '25', '50', '100'];
 export const DEFAULT_INITIAL_PAGE = 0;
@@ -56,7 +57,7 @@ export function Pagination<TData>({
           )}
         </Text>
       ) : null}
-
+      <Feature12 />
       <Group>
         <Box className={classes[2]}>
           {mode === 'default' ? (
